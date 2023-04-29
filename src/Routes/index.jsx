@@ -1,0 +1,6 @@
+
+const Routes = () => {
+    return(
+        <>Routes</>
+    )
+}
