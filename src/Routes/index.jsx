@@ -1,6 +1,0 @@
-
-const Routes = () => {
-    return(
-        <>Routes</>
-    )
-}
