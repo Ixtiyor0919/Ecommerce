@@ -1,6 +1,7 @@
-import { Box, Typography } from "@mui/material";
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import styled from "styled-components";
+import CloseIcon from '@mui/icons-material/Close';
+import { Box, IconButton, Typography } from "@mui/material";
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 export const ModalWrapper = styled(Box)`
     display: flex;
@@ -15,7 +16,6 @@ export const ModalWrapper = styled(Box)`
     position: absolute;
     top: 15%;
     left: 20%;
-    // transform: translate(0, -50%);
 `
 export const ModalImgBox = styled(Box)`
     width: 50%;
@@ -28,6 +28,7 @@ export const ModalForm = styled.form`
     padding: 20px;
     display: grid;
     align-content: space-between;
+    position: relative;
 `
 export const ModalFormTop = styled.div`
     display: flex;
@@ -46,4 +47,15 @@ export const ModalInfoIcon = styled(InfoOutlinedIcon)`
     height: 24px;
     color: #A5A5A5;
     margin-left: auto;
+`
+export const ModalCloseBtn = styled(IconButton)`
+    color: #FFFFFF;
+    position: absolute;
+    top: -10px;
+    right: -60px;
+}
+`
+export const ModalCloseIcon = styled(CloseIcon)`
+    font-size: 2rem;
+}
 `

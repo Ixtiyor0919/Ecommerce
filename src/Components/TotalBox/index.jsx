@@ -1,8 +1,8 @@
 import { MainBtn } from "../MainBtn";
-import { TotalWrapper, TotalIner, TotalText } from "./styled";
 import { useTranslation } from "react-i18next";
+import { TotalWrapper, TotalIner, TotalText } from "./styled";
 
-export const TotalBox = ({value, text, weight}) => {
+export const TotalBox = ({value, weight}) => {
     const {t} = useTranslation();
     return(
         <TotalWrapper>

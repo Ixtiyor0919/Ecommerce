@@ -1,8 +1,17 @@
 {
-  "app-title": "Pizza",
+  "cm": "cm",
+  "reset": "Reset",
+  "apply": "Apply",
   "main-btn": "Add",
+  "component": "Component",
+  "general": "General",
+  "cheese": "Cheese",
+  "meat": "Meat",
+  "app-title": "Pizza",
+  "filters": "Filters",
   "total-text": "Total",
-  "filter-modal-title": "Country style pepperoni",
+  "language-title": "Eng",
   "add-title": "Add to pizza",
+  "filter-modal-title": "Country style pepperoni",
   "login-btn-password": "Get the activation code"
 }

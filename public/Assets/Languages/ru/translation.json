@@ -1,9 +1,18 @@
 {
+  "cm": "cm",
+  "reset": "Сбросить",
   "app-title": "Пицца",
-  "main-btn": "Добавить",
+  "apply": "Применить",
+  "general": "Общее",
+  "cheese": "Сыр",
+  "meat": "Мясо",
+  "component": "Компонент",
+  "filters": "Фильтры",
   "total-text": "Итого",
+  "main-btn": "Добавить",
+  "language-title": "Ру",
   "add-title": "Добавьте в пиццу",
-  "filter-modal-title": "Пепперони по-деревенски",
-  "login-btn-password": "Получить код активации"
+  "login-btn-password": "Получить код активации",
+  "filter-modal-title": "Пепперони по-деревенски"
 }
   

@@ -1,22 +1,31 @@
 import React from "react"
 import { TotalBox } from "../TotalBox"
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 import { SquareTabs, StandardTabs } from "../Tabs"
-import WhatshotIcon from '@mui/icons-material/Whatshot';
+import WhatshotIcon from "@mui/icons-material/Whatshot"
 import FilterPizza from "../../Assets/Images/FilterPizza.png"
 import { Fade, Modal, Backdrop, Box, Button } from "@mui/material"
-import { ModalImgBox, ModalWrapper, ModalForm, ModalTitle, ModalFormTop, ModalInfoIcon } from "./styled"
+import {
+  ModalImgBox,
+  ModalWrapper,
+  ModalForm,
+  ModalTitle,
+  ModalFormTop,
+  ModalInfoIcon,
+  ModalCloseIcon,
+  ModalCloseBtn,
+} from "./styled"
 
 const FilterModal = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation()
   const [open, setOpen] = React.useState(false)
   const handleClose = () => setOpen(false)
   const handleOpen = () => {
     setOpen(!open)
   }
   const style = {
-    background: 'rgba(25, 25, 25, 0.4)',
-    backdropFilter: 'blur(16px)',
+    background: "rgba(25, 25, 25, 0.4)",
+    backdropFilter: "blur(16px)",
   }
   return (
     <>
@@ -41,11 +50,19 @@ const FilterModal = () => {
         <Fade in={open}>
           <ModalWrapper>
             <ModalImgBox>
-              <Box component="img" src={FilterPizza} width="100%" height="100%" />
+              <Box
+                component="img"
+                src={FilterPizza}
+                width="100%"
+                height="100%"
+              />
             </ModalImgBox>
             <ModalForm>
+              <ModalCloseBtn onClick={handleClose}>
+                <ModalCloseIcon />
+              </ModalCloseBtn>
               <ModalFormTop>
-                <WhatshotIcon sx={{color: "#E23535"}} />
+                <WhatshotIcon sx={{ color: "#E23535" }} />
                 <ModalTitle>{t("filter-modal-title")}</ModalTitle>
                 <ModalInfoIcon />
               </ModalFormTop>
@@ -62,4 +79,4 @@ const FilterModal = () => {
   )
 }
 
-export default FilterModal;
+export default FilterModal

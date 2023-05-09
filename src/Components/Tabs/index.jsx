@@ -9,12 +9,18 @@ import {
   STabListItem,
   AddTitle,
   AddBox,
+  AddValue,
+  FilterTabWrapper,
+  FilterTabTitle,
+  FilterTab,
+  FilterTabsList
 } from "./styled"
 import React from "react"
 import { useTranslation } from "react-i18next"
 import { AddPizzaData, TabData, TabDataThird } from "../../Api/Data"
 
 export const StandardTabs = ({ second }) => {
+  const { t } = useTranslation()
   const [value, setValue] = React.useState(1)
 
   const handleChange = (event, newValue) => {
@@ -34,7 +40,7 @@ export const StandardTabs = ({ second }) => {
           value={id}
           second={second}
           active={value === id}
-          label={`${label} ${+!second ? "cm" : ""}`}
+          label={`${label} ${+!second ? `${t("cm")}` : ""}`}
         />
       ))}
     </TabWrapper>
@@ -58,7 +64,7 @@ export const SquareTabs = ({ cancel }) => {
     <AddBox>
       {!cancel ? <AddTitle>{t("add-title")}</AddTitle> : ""}
       <STabLIst>
-        {AddPizzaData?.map(({ id, text, icon }) => (
+        {AddPizzaData?.map(({ id, text, icon, value }) => (
           <STabListItem
             key={id}
             onClick={() => handleSelected(id)}
@@ -77,9 +83,32 @@ export const SquareTabs = ({ cancel }) => {
               {icon}
             </SquareItem>
             {text}
+            <AddValue>{!cancel ? value + " " + "₽" : ""}</AddValue>
           </STabListItem>
         ))}
       </STabLIst>
     </AddBox>
+  )
+}
+
+export const FilterTabs = ({ title, data }) => {
+  const [value, setValue] = React.useState(1)
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue)
+  }
+
+  return (
+    <FilterTabWrapper>
+      <FilterTabTitle variant="h2">{title}</FilterTabTitle>
+      <FilterTabsList
+        value={value}
+        onChange={handleChange}
+      >
+        {data?.map(({ id, name }) => (
+          <FilterTab key={id} value={id} label={name} />
+        ))}
+      </FilterTabsList>
+    </FilterTabWrapper>
   )
 }

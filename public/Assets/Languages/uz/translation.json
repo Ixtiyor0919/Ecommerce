@@ -1,9 +1,18 @@
 {
+  "cm": "sm",
   "app-title": "Pitsa",
-  "main-btn": "Qo'shish",
   "total-text": "Jami",
+  "main-btn": "Qo'shish",
+  "language-title": "O'zb",
+  "apply": "Murojaat qiling",
+  "component": "Komponent",
+  "general": "General",
+  "cheese": "Pishloq",
+  "meat": "Go'sht",
+  "reset": "Qayta o'rnatish",
+  "filter-modal-title": "Mamlakat uslubidagi pepperoni ",
   "add-title": "Pizzaga qo'shing",
-  "filter-modal-title": "Mamlakat uslubidagi pepperoni",
+  "filters": "Filtrlar",
   "login-btn-password": "Faollashtiruvchi kodni oling"
 }
   
