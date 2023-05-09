@@ -1,8 +1,8 @@
 import React, {
   lazy
 } from "react";
-import Loadable from "../Components/Loadable";
 import UsersLayout from "../Layout";
+import Loadable from "../Components/Loadable";
 
 const Home = Loadable(lazy(() =>
   import( /*webpackChunkName:'HomePage'*/ "../Pages/Home")

@@ -1,8 +1,9 @@
 {
-  "app-title": "Сайт доставки",
-  "header-cart": "Корзина",
-  "language-title": "Ру",
-  "login-btn": "Войти",
+  "app-title": "Пицца",
+  "main-btn": "Добавить",
+  "total-text": "Итого",
+  "add-title": "Добавьте в пиццу",
+  "filter-modal-title": "Пепперони по-деревенски",
   "login-btn-password": "Получить код активации"
 }
   

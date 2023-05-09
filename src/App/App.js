@@ -1,5 +1,5 @@
-import '../Styles/App.css';
 import React from 'react';
+import '../Styles/App.css';
 import Routes from '../Routes';
 import ThemeProvider from '../Themes';
 import {useTranslation} from "react-i18next";

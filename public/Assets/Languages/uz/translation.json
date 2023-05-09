@@ -1,8 +1,9 @@
 {
-  "app-title": "Dostavka sayt",
-  "header-cart": "Savat",
-  "language-title": "O'zb",
-  "login-btn": "Kirish uchun",
+  "app-title": "Pitsa",
+  "main-btn": "Qo'shish",
+  "total-text": "Jami",
+  "add-title": "Pizzaga qo'shing",
+  "filter-modal-title": "Mamlakat uslubidagi pepperoni",
   "login-btn-password": "Faollashtiruvchi kodni oling"
 }
   

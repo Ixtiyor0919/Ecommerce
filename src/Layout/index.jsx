@@ -1,10 +1,10 @@
-import React from "react"
-import { Header } from "./Header/Header"
-import { Footer } from "./Footer/Footer"
-import { Outlet } from "react-router-dom"
-import { Box, CssBaseline } from "@mui/material"
-import { AppToolbar, KeyboardFab, KeyboardIcon } from "./Styles"
-import KeyboardScroll from "../Components/Scrolls/KeyboardScroll"
+import React from "react";
+import { Header } from "./Header/Header";
+import { Footer } from "./Footer/Footer";
+import { Outlet } from "react-router-dom";
+import { Box, CssBaseline } from "@mui/material";
+import { AppToolbar, KeyboardFab, KeyboardIcon } from "./Styles";
+import KeyboardScroll from "../Components/Scrolls/KeyboardScroll";
 
 export default function UsersLayout(props) {
   return (
@@ -25,4 +25,4 @@ export default function UsersLayout(props) {
       <Footer />
     </Box>
   )
-}
+};

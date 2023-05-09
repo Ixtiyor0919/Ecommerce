@@ -1,7 +1,8 @@
 {
-  "app-title": "Delivery site",
-  "header-cart": "Basket",
-  "language-title": "Eng",
-  "login-btn": "Login",
+  "app-title": "Pizza",
+  "main-btn": "Add",
+  "total-text": "Total",
+  "filter-modal-title": "Country style pepperoni",
+  "add-title": "Add to pizza",
   "login-btn-password": "Get the activation code"
 }
